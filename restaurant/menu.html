@@ -6,23 +6,51 @@
 -->
 <html lang="en">
 <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Menu</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <style type="text/css">
+        section {
+            background-color: #A52422;
+            color: #EFF2C0;
+        }
+
+        article {
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="container">
     <header>
-        <h1>The Sandwich House</h1>
+        <h1>Grill Nine</h1>
     </header>
+    <noscript style="color:red">Javascript is disabled. This site is best viewed with Javascript.</noscript>
 
     <nav>
-        <hr />
-        <p><a href="index.html">Home</a>
-            <a href="menu.html">Menu</a> 
-            <a href="contact.html">Contact Us</a></p>
-        <hr />
+        <a class="btn badge-pill" href="index.html"><i class="fas fa-home"></i></a>
+            <a class="btn badge-pill" href="menu.html">Menu</a> 
+            <a class="btn badge-pill" href="contact.html">Contact Us</a>
+            <div class="clear-float"></div>
     </nav>
     <section>
-        <article id="burger-fries">
+        <div class="row">
+            <div class="col-lg-4">
+        <article id="burger-fries" style="text-align:center">
             <h3>Burger and Fries</h3>
             <p>An American Classic! <br />
             Your choice - with or without cheese <br />
@@ -30,20 +58,103 @@
             Served with our famous thick cut french fries <br />
             $7.95</p>
         </article>
-        <article id="hot-dog-chips">
-            <h3>Hot Dog and Chips</h3>
-            <p>A Summer Classic! <br />
-            Your choice - white or wheat bun <br />
-            Relish, mustard, and ketchup <br />
-            Served with house-made chips <br />
+        </div>
+        <div class="col-lg-4">
+            <article id="hot-dog-chips" style="text-align:center">
+                <h3>Hot Dog and Chips</h3>
+                <p>A Summer Classic! <br />
+                Your choice - white or wheat bun <br />
+                Relish, mustard, and ketchup <br />
+                Served with house-made chips <br />
+                $7.95</p>
+            </article>
+        </div>
+        <div class="col-lg-4">
+        <article id="italian-sausage-peppers" style="text-align:center">
+            <h3>Italian Sausage and Peppers</h3>
+            <p>An All-Time Favorite! <br />
+                Your choice - mild or spicy Cole Slaw <br />
+                Served with garlic mashers <br />
+            $10.95</p>
+        </article>
+        </div>
+        </div> <!-- close row 1-->
+        <div class="row"> 
+            <div class="col-lg-4">
+        <article id="tenderloin-sandwich-chips">
+            <h3>Tenderloin Sandwich and Chips</h3>
+            <p>Really Hits the Spot! <br />
+                Plain or Sesame Seed Bun <br />
+                Pickle, onion, tomato, and lettuce <br />
+                Served with our house-made chips <br />
+                $8.95</p>
+        </article>
+        </div>
+        <div class="col-lg-4">
+        <article id="house-salad">
+            <h3>House Salad</h3>
+            <p>On the Lighter Side <br />
+                Your choice - with or without cheese <br />
+                Iceberg lettuce, tomatoes, peppers <br />
+                Thousand Island or Ranch Dressing <br />
+                Served with a dinner roll <br />
+            $6.95</p>
+        </article>
+    </div>
+    <div class="col-lg-4">
+        <article id="brisket-sandwich-fries">
+            <h3>Brisket Sandwich and Fries</h3>
+            <p>A Taste of Texas! <br />
+                Smoked Brisket on thick-cut Texas Toast <br />
+                Cole Slaw <br />
+                Served with our famous thick-cut french fries <br />
             $7.95</p>
         </article>
+    </div>
+    </div> <!-- close row -->
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <table id="beverages">
+                <thead>
+                    <tr>
+                        <th colspan="2" style="text-align: center"><h3>Beverages</h3></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: left; padding-left: 20px">Root Beer</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left; padding-left: 20px">Bottled Water</td>
+                        <td>$1.25</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left; padding-left: 20px">Lemonade</td>
+                        <td>$1.00</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left; padding-left: 20px">Iced Tea</td>
+                        <td>$1.25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
     </section>
 
     <hr />
+
     <footer>
         <p>1234 Alphabet Lane, Dallas, Texas 75226</p>
         <p>214-726-9424</p>    
     </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity=" sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
