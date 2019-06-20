@@ -32,44 +32,31 @@
 
     <nav>
         <a class="btn badge-pill" href="index.html"><i class="fas fa-home"></i></a>
-            <a class="btn badge-pill" href="menu.html">Menu</a> 
-            <a class="btn badge-pill" href="contact.html">Contact Us</a>
-            <div class="clear-float"></div>
+        <a class="btn badge-pill" href="menu.html">Menu</a> 
+        <a class="btn badge-pill" href="contact.html">Contact Us</a>
+        <div class="clear-float"></div>
     </nav>
     
         <form  method="POST" name="contactForm" onsubmit="return validateForm();" class="ml-3">
             <div class="row">
-     
                 <div class="form-group col-lg-4 col-md-6">
-                
                         <label for="name">Name:</label>
-                        <input type="text" class="form-control" id="name" name="name">
-                   
+                        <input type="text" class="form-control" id="name" name="name">    
                 </div>
-        
-                  </div>
-                  <div class="row">
-    
-                 
+            </div>
+            <div class="row"> 
                 <div class="form-group col-lg-4 col-md-6">
-                    
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email">
-                   
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email">
                 </div>
-
-                 </div>
-                 <div class="row">
+            </div>
+            <div class="row">
                 <div class="form-group col-lg-4 col-md-6">
-                  
-                        <label for="phone" class="col-form-label">Phone:</label>
-                  
-                        <input type="tel" class="form-control" id="phone" name="phone">
-          
+                    <label for="phone" class="col-form-label">Phone:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone">         
                 </div>
-                </div>
-                <div class="row">
-
+            </div>
+            <div class="row">
                 <div class="form-group col-lg-4 col-md-6">
                     <label for="reason">Reason for Inquiry:</label>
                     <select class="form-control" id="reason" name="reason">
@@ -79,20 +66,18 @@
                         <option value="Other">Other</option>
                     </select> <br />
                 </div>
-                </div>
+            </div>
             <div class="row">
                 <div class="form-group col-lg-6">
                     <label for="info">Additional Information:</label>
                     <textarea id="info" class="form-control" name="info"></textarea> <br />
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <label for="radio-form" class="font-weight-normal">Have you been to the restaurant?</label>
                 </div>
-           <div class="row">
-            <div class="col-lg-3">
-               <label for="radio-form" class="font-weight-normal">Have you been to the restaurant?</label>
-           </div>
-
-                <div class="form-check form-check-inline" id="radio-form">
-                    
+                <div class="form-check form-check-inline" id="radio-form">     
                     <input class="form-check-input ml-3" type="radio" id="choice1" name="past-customer" value="no" checked>
                     <label class="form-check-label" for="choice1">No</label>
                 </div>
@@ -100,34 +85,32 @@
                     <input class="form-check-input" type="radio" id="choice2" name="past-customer" value="yes">
                     <label class="form-check-label" for="choice2">Yes</label>
                 </div>
-                </div>
+            </div>
            
             <div class="row">
                 <div class="col-sm-3">
                 <label class="font-weight-normal">Best days to contact you: </label>
                 </div>
-            <div class="form-check form-check-inline">
-                
-                <input class="form-check-input ml-3" type="checkbox" id="monday" name="contact-day" value="monday">
-                <label class="form-check-label" for="monday">M</label> 
-            </div>
-                 <div class="form-check form-check-inline">
-
-                <input class="form-check-input" type="checkbox" id="tuesday" name="contact-day" value="tuesday">
-                <label class="form-check-label" for="tuesday">T</label> 
-            </div>
-                 <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="wednesday" name="contact-day" value="wednesday">
-                <label class="form-check-label" for="wednesday">W</label> 
-            </div>
-                 <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="thursday" name="contact-day" value="thursday">
-                <label class="form-check-label" for="thursday">Th</label> 
-            </div>
-                 <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="friday" name="contact-day" value="friday">
-                <label class="form-check-label" for="friday">F</label> <br />
-            </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input ml-3" type="checkbox" id="monday" name="contact-day" value="monday">
+                    <label class="form-check-label" for="monday">M</label> 
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="tuesday" name="contact-day" value="tuesday">
+                    <label class="form-check-label" for="tuesday">T</label> 
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="wednesday" name="contact-day" value="wednesday">
+                    <label class="form-check-label" for="wednesday">W</label> 
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="thursday" name="contact-day" value="thursday">
+                    <label class="form-check-label" for="thursday">Th</label> 
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="friday" name="contact-day" value="friday">
+                    <label class="form-check-label" for="friday">F</label> <br />
+                </div>
             </div>
 
             <div>

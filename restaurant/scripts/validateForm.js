@@ -1,10 +1,8 @@
-/*    for (var count = 0; count < document.forms["contactForm"].elements.length; 
-        count++) {
-        if(document.forms[contactForm].elements[count].parentElement.className.indexOf("has-") != -1) {
-            document.forms
-        }
-    }
-} */
+/*
+Creator: Anne Hellerman
+Date Created: 6/15/19
+Date last modified: 6/19/19
+*/
 
 function validateForm () {
     var name = document.forms["contactForm"]["name"].value;
@@ -40,7 +38,7 @@ function validateForm () {
     }
 
     if (info == "") {
-        alert("Please enter information regarding your request.");
+        alert("Please enter additional information regarding your request.");
         document.forms["contactForm"]["info"].focus();
         return false;
     }

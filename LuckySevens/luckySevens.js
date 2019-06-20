@@ -1,33 +1,15 @@
-function clearErrors() {    
-    for (var loopCounter = 0; 
-        loopCounter < document.forms["game"].elements.length; 
-        loopCounter++) {
-        if (document.forms["game"].elements[loopCounter]
-           .parentElement.className.indexOf("has-") != -1) {
-            
-            document.forms["game"].elements[loopCounter]
-               .parentElement.className = "form-group";
-        }
-    }    
-} 
-
-function resetForm() {
-    clearErrors();
-    document.forms["game"]["inputBet"].value = "";
-    document.getElementById("results").style.display = "none";
-    document.getElementById("submitButton").innerText = "Play";
-    document.forms["game"]["inputBet"].focus();
-}
-
-
-
+/*
+Creator: Anne Hellerman
+Date Created: 6/17/19
+Date last modified:6/19/19
+*/
 
 function rollDice(numSides){
     return Math.floor(Math.random() * numSides) + 1;
 }
 
 function playGame() {
-    clearErrors();
+
     var numRolls = 0;
     var numRollsAtMax = 0;
     var die1;
@@ -67,7 +49,7 @@ function playGame() {
     document.getElementById("submitButton").innerText = "Play Again";
     document.getElementById("startingBet").innerText = initialBet;
     document.getElementById("totalRolls").innerText = numRolls;
-    document.getElementById("highAmount").innerText = maxMoney;
+    document.getElementById("highAmount").innerText = maxMoney - initialBet; //subtract initial bet to show just the money won, not the max money held
     document.getElementById("highAmountRoll").innerText = numRollsAtMax;
 
     return false;
